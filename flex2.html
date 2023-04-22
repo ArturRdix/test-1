@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: rgb(30, 30, 30);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 911px;
+            height: 500px;
+            gap: 20px;
+            
+        }
+
+        .wrapper-top {
+            flex-grow: 4;
+            display: flex;
+            gap: 20px;
+        }
+
+        .wrapper-bottom {
+            flex-grow: 1;
+            background: rgb(36, 122, 213);
+        }
+
+        .wrapper-top-left {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .wrapper-top-right {
+            display: flex;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        .wrapper-top-left-top {
+            background: rgb(163, 0, 0);
+            flex-grow: 1;
+        }
+
+        .wrapper-top-left-bottom {
+            display: flex;
+            flex-grow: 3;
+            gap: 20px;
+        }
+
+        .wrapper-top-left-bottom-left {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .wrapper-top-left-bottom-right {
+            flex-grow: 1;
+            background: rgb(22, 37, 82);
+        }
+
+        .wrapper-top-left-bottom-left-top {
+            flex-grow: 1;
+            background: rgb(198, 109, 0);
+        }
+
+        .wrapper-top-left-bottom-left-bottom {
+            flex-grow: 1;
+            background: rgb(119, 255, 0);
+        }
+
+        .wrapper-top-right-left {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .wrapper-top-right-right {
+            flex-grow: 1;
+            background: rgb(175, 0, 44);
+        }
+
+        .wrapper-top-right-left-top {
+            flex-grow: 3;
+            display: flex;
+            gap: 20px;
+        }
+
+        .wrapper-top-right-left-bottom {
+            flex-grow: 1;
+            background: rgb(175, 0, 137);
+        }
+
+        .wrapper-top-right-left-top-left {
+            flex-grow: 1;
+            background: rgb(255, 42, 205);
+        }
+
+        .wrapper-top-right-left-top-right {
+            flex-grow: 1;
+            background: rgb(23, 79, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-top">
+            <div class="wrapper-top-left">
+                <div class="wrapper-top-left-top"></div>
+                <div class="wrapper-top-left-bottom">
+                    <div class="wrapper-top-left-bottom-left">
+                        <div class="wrapper-top-left-bottom-left-top"></div>
+                        <div class="wrapper-top-left-bottom-left-bottom"></div>
+                    </div>
+                    <div class="wrapper-top-left-bottom-right"></div>
+                </div>
+            </div>
+            <div class="wrapper-top-right">
+                <div class="wrapper-top-right-left">
+                    <div class="wrapper-top-right-left-top">
+                        <div class="wrapper-top-right-left-top-left"></div>
+                        <div class="wrapper-top-right-left-top-right"></div>
+                    </div>
+                    <div class="wrapper-top-right-left-bottom"></div>
+                </div>
+                <div class="wrapper-top-right-right"></div>
+            </div>
+        </div>
+        <div class="wrapper-bottom"></div>
+    </div>
+</body>
+
+</html>
