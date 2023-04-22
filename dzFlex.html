@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #3b0856;
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+        }
+
+        #main {
+            display: flex;
+            max-width: 1028px;
+            height: 408px;
+            gap: 35px;
+            margin-top: 75px;
+        }
+       @media(max-width: 1028px){
+        #main {
+            display: flex;
+            max-width: 828px;
+            height: 208px;
+            gap: 35px;
+            margin-top: 75px;
+        }
+       }
+        #left {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #right {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #left-top {
+            flex-grow: 1;
+            background: #b549cf;
+            gap: 20px;
+
+        }
+
+        #left-bottom {
+            display: flex;
+            flex-grow: 4;
+            gap: 20px;
+        }
+
+        #left-bottom-right {
+            flex-grow: 1;
+            background: #03b5c7;
+        }
+
+        #left-bottom-left {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        #left-bottom-left-top {
+            flex-grow: 2;
+            background: #fc9e12;
+        }
+
+        #left-bottom-left-bottom {
+            flex-grow: 1;
+            background: #f13746;
+        }
+
+        #right-bottom {
+            flex-grow: 1.4;
+            background: #b549cf;
+
+        }
+
+        #right-top {
+            display: flex;
+            flex-grow: 4;
+            gap: 20px;
+
+        }
+
+        #right-top-left {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        #right-top-right {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        #right-top-left-top {
+            background: #f13746;
+            flex-grow: 2;
+        }
+
+        #right-top-left-middle {
+            background: #03b5c7;
+            flex-grow: 1.2;
+            ;
+        }
+
+        #right-top-left-bottom {
+            background: #fc9e12;
+            flex-grow: 2;
+        }
+
+        #right-top-right-top {
+            background: #03b5c7;
+            flex-grow: 2.7;
+        }
+
+        #right-top-right-middle {
+            background: #fc9e12;
+            flex-grow: 2;
+        }
+
+        #right-top-right-bottom {
+            background: #f13746;
+            flex-grow: 1;
+        }
+        #root{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #text {
+            display: flex;
+            justify-content: center;
+        }
+        #text>h1 {
+            color: white;
+            font-family: 'Arial';
+            font-size: 109pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div id="main">
+            <div id="left">
+                <div id="left-top"></div>
+                <div id="left-bottom">
+                    <div id="left-bottom-left">
+                        <div id="left-bottom-left-top"></div>
+                        <div id="left-bottom-left-bottom"></div>
+                    </div>
+                    <div id="left-bottom-right"></div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="right-top">
+                    <div id="right-top-left">
+                        <div id="right-top-left-top"></div>
+                        <div id="right-top-left-middle"></div>
+                        <div id="right-top-left-bottom"></div>
+                    </div>
+                    <div id="right-top-right">
+                        <div id="right-top-right-top"></div>
+                        <div id="right-top-right-middle"></div>
+                        <div id="right-top-right-bottom"></div>
+                    </div>
+                </div>
+                <div id="right-bottom"></div>
+            </div>
+            
+        </div>
+        <div id="text">
+            <h1>CSS FLEXBOX</h1>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
